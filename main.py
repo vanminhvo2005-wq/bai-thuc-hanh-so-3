@@ -3,4 +3,4 @@ def tinh_diem_gpa(diem_so):
         return 4.0  
     else:
         return round((diem_so / 10) * 4, 2)
-print("Diem GPA he 4 la:", tinh_dim_gpa(8.5))  
+print("Diem GPA he 4 la:", tinh_diem_gpa(8.5))  
