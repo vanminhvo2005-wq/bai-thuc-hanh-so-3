@@ -1,4 +1,4 @@
-def tinh_dim_gpa(diem_so):
+def tinh_diem_gpa(diem_so):
     if diem_so >= 8.5:
         return 4.0  
     else:
