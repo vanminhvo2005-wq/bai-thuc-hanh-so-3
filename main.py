@@ -2,4 +2,5 @@ def tinh_dim_gpa(diem_so):
     if diem_so >= 8.5:
         return 4.0  
     else:
-        return round((diem_so / 10) * 4, 2)  
+        return round((diem_so / 10) * 4, 2)
+print("Diem GPA he 4 la:", tinh_dim_gpa(8.5))  

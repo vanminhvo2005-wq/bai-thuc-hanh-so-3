@@ -1,0 +1,23 @@
+name: Python Code Quality Check (CI)
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Lay code moi nhat tu kho ve may ao
+
+    - name: Cai dat phien ban Python 3.10
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.10'
+
+    - name: Tu dong chay bo kiem thu Unit Test
+      run: |
+        python -m unittest test_main.py 
